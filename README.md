@@ -1,7 +1,8 @@
-AWS Serverless Fraud Detection System
+**AWS Serverless Fraud Detection System**
+
 A completely serverless, end-to-end machine learning pipeline that detects fraud credit card transactions in real time. This system ingests transaction data via an API, processes it using AWS Lambda, evaluates it against an XGBoost model hosted on Amazon SageMaker, and stores the results for analytics in QuickSight.
 
-Architecture
+Architecture:
 Flow: User/App → API Gateway → AWS Lambda → SageMaker Endpoint → S3 → Athena → QuickSight
  → User submits a transaction via API Gateway 
  → AWS Lambda receives the payload and invokes the ML model.
